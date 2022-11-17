@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #02733E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+#logo {
+    width: 150px;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.infos {
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.infos:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px white;
+    padding-bottom: 1%;
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.infos:hover:after {
+    transform: scaleX(1);
+}
+
+.foto {
+    width: 280px;
+    height: 230px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.conteudo  {
+    max-width: 200px;
+    height: 380px;
+    border-radius: 5px;
+}
+
+.secao {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.secao > div {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0 50px 0 ;
+    color: #60A685;
+}
+
+.imagem {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.favorito {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    opacity: 0;
+}
+
+.descricao {
+    height:25%;
+}
+
+#nome {
+    font-size: 1rem;
+    text-align: center;
+}
+
+#preco {
+    font-size: 1.2rem;
+    text-align: center;    
+    padding-top: 20px;
+    color: rgb(255, 145, 0);
+}
+
+.extra {
+    display: flex;
+    height: 20.3%;
+    align-items: center;
+    opacity: 0;
+}
+
+.verProduto {
+    display: inline-block;
+    width: calc(100% - 50px);
+    background-color: #148C54;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 0 0 0 5px;
+}
+
+#lupa{
+    background: #60A685;
+    display: inline-block;
+    height: 26px;
+    width: 42px;
+    padding: 5px 20px;
+    border-radius: 0 0 5px 0;
+}
+
+.conteudo:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.conteudo:hover .extra{
+    opacity: 1;
+    transition: .5s;
+}
+
+.conteudo:hover .favorito{
+    opacity: 1;
+    transition: .5s;
+}
+
+footer {
+    display: flex;
+    background-color: #148C54;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.contato {
+    color: white;
+    margin: 1rem;
+    list-style: none;
+}
+
+.sobre {
+    flex-wrap: wrap;
+    max-width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    border: solid;
+    border-color: #60A685;
+    border-width: 2px;
+    border-radius: 10px;
+}
+.texto {
+    margin: 20px;
+    line-height: 30px;
+    text-indent: 2rem;
+}
